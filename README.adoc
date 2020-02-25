@@ -1,0 +1,28 @@
+= Dell OpenManage Essentials
+
+OpenNMS configuration files for Dell OpenManage Essentials
+
+== Installation
+
+.Download and install from GitHub
+[source, bash]
+----
+mkdir ${HOME}/opennms-config-workspace
+cd ${HOME}/opennms-config-workspace
+git clone https://github.com/opennms-config-modules/dell-ome.git
+----
+
+=== Events ===
+
+.Install event configuration
+[source, bash]
+----
+cp ${HOME}/opennms-config-workspace/dell-ome/events/*.xml ${OPENNMS_HOME}/etc/events
+----
+
+.Include in eventconf.xml
+[source, xml]
+----
+   <event-file>events/dell-ome.events.xml</event-file>
+----
+

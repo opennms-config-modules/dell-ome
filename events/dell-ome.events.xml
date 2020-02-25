@@ -1,0 +1,447 @@
+<events xmlns="http://xmlns.opennms.org/xsd/eventconf">
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>1</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntTestAlert</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntTestAlert</event-label>
+      <descr>
+&lt;p>Test alert forwarded from OM Enterprise.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntTestAlert trap received
+	omEntAlertMessage=%parm[#1]%&lt;/p>
+	</logmsg>
+      <severity>Normal</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>1000</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntAlertSystemUp</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntAlertSystemUp</event-label>
+      <descr>
+&lt;p>System up message from OM Enterprise. Sent when OM Enterprise detects a device has come online.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDevice&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntAlertSystemUp trap received
+	omEntAlertMessage=%parm[#1]%
+	omEntAlertDevice=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Normal</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>1001</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntAlertSystemDown</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntAlertSystemDown</event-label>
+      <descr>
+&lt;p>System down message from OM Enterprise. Sent when OM Enterprise detects a device has gone offline.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDevice&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntAlertSystemDown trap received
+	omEntAlertMessage=%parm[#1]%
+	omEntAlertDevice=%parm[#2]%&lt;/p>
+	</logmsg>
+      <severity>Major</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>2000</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntAlertForwardedAlert</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntAlertForwardedAlert</event-label>
+      <descr>
+&lt;p>Forwarded alert from OM Enterprise. The event may have originated as an SNMP trap to the OM Enterprise application. The alert format is normalized.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDevice&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertSeverity&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessageId&lt;/b>&lt;/td>&lt;td>
+	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntAlertForwardedAlert trap received
+	omEntAlertMessage=%parm[#1]%
+	omEntAlertDevice=%parm[#2]%
+	omEntAlertSeverity=%parm[#3]%
+	omEntAlertMessageId=%parm[#4]%&lt;/p>
+	</logmsg>
+      <severity>Warning</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>3001</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntAlertUnknownStatus</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntAlertUnknownStatus</event-label>
+      <descr>
+&lt;p>System monitoring alert from OM Enterprise. Sent when status of the remote device is Unknown.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDevice&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDataSources&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntRawAlertInfo&lt;/b>&lt;/td>&lt;td>
+	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntAlertUnknownStatus trap received
+	omEntAlertMessage=%parm[#1]%
+	omEntAlertDevice=%parm[#2]%
+	omEntAlertDataSources=%parm[#3]%
+	omEntRawAlertInfo=%parm[#4]%&lt;/p>
+	</logmsg>
+      <severity>Warning</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>3002</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntAlertNormalStatus</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntAlertNormalStatus</event-label>
+      <descr>
+&lt;p>System monitoring alert from OM Enterprise. Sent when status of the remote device is Normal.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDevice&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDataSources&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntRawAlertInfo&lt;/b>&lt;/td>&lt;td>
+	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntAlertNormalStatus trap received
+	omEntAlertMessage=%parm[#1]%
+	omEntAlertDevice=%parm[#2]%
+	omEntAlertDataSources=%parm[#3]%
+	omEntRawAlertInfo=%parm[#4]%&lt;/p>
+	</logmsg>
+      <severity>Normal</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>3003</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntAlertWarningStatus</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntAlertWarningStatus</event-label>
+      <descr>
+&lt;p>System monitoring alert from OM Enterprise. Sent when status of the remote device is Warning.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDevice&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDataSources&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntRawAlertInfo&lt;/b>&lt;/td>&lt;td>
+	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntAlertWarningStatus trap received
+	omEntAlertMessage=%parm[#1]%
+	omEntAlertDevice=%parm[#2]%
+	omEntAlertDataSources=%parm[#3]%
+	omEntRawAlertInfo=%parm[#4]%&lt;/p>
+	</logmsg>
+      <severity>Warning</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>3004</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntAlertCriticalStatus</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntAlertCriticalStatus</event-label>
+      <descr>
+&lt;p>System monitoring alert from OM Enterprise. Sent when status of the remote device is Critical.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDevice&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDataSources&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntRawAlertInfo&lt;/b>&lt;/td>&lt;td>
+	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntAlertCriticalStatus trap received
+	omEntAlertMessage=%parm[#1]%
+	omEntAlertDevice=%parm[#2]%
+	omEntAlertDataSources=%parm[#3]%
+	omEntRawAlertInfo=%parm[#4]%&lt;/p>
+	</logmsg>
+      <severity>Major</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>4000</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntAlertNormalMetric</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntAlertNormalMetric</event-label>
+      <descr>
+&lt;p>If the critical or warning metric threshold is set on a device or group and returns to normalcy after being exceeded, this trap is sent.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDevice&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessageId&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntAlertNormalMetric trap received
+	omEntAlertMessage=%parm[#1]%
+	omEntAlertDevice=%parm[#2]%
+	omEntAlertMessageId=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Normal</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>4001</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntAlertWarningMetric</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntAlertWarningMetric</event-label>
+      <descr>
+&lt;p>If the warning metric threshold is set on a device or group and the threshold is exceeded, this trap is sent.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDevice&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessageId&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntAlertWarningMetric trap received
+	omEntAlertMessage=%parm[#1]%
+	omEntAlertDevice=%parm[#2]%
+	omEntAlertMessageId=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Warning</severity>
+   </event>
+   <event>
+      <mask>
+         <maskelement>
+            <mename>id</mename>
+            <mevalue>.1.3.6.1.4.1.674.11000.1000.500.1</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>generic</mename>
+            <mevalue>6</mevalue>
+         </maskelement>
+         <maskelement>
+            <mename>specific</mename>
+            <mevalue>4002</mevalue>
+         </maskelement>
+      </mask>
+      <uei>uei.opennms.org/dell/traps/ome/omEntAlertCriticalMetric</uei>
+      <event-label>MIB-Dell-OM-Ent defined trap event: omEntAlertCriticalMetric</event-label>
+      <descr>
+&lt;p>If the critical metric threshold is set on a device or group and the threshold is exceeded, this trap is sent.&lt;/p>&lt;table>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessage&lt;/b>&lt;/td>&lt;td>
+	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertDevice&lt;/b>&lt;/td>&lt;td>
+	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
+	&lt;tr>&lt;td>&lt;b>
+
+	omEntAlertMessageId&lt;/b>&lt;/td>&lt;td>
+	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>
+	</descr>
+      <logmsg dest="logndisplay">&lt;p>
+	omEntAlertCriticalMetric trap received
+	omEntAlertMessage=%parm[#1]%
+	omEntAlertDevice=%parm[#2]%
+	omEntAlertMessageId=%parm[#3]%&lt;/p>
+	</logmsg>
+      <severity>Major</severity>
+   </event>
+</events>
