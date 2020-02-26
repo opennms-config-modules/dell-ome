@@ -1,6 +1,6 @@
-= Dell OpenManage Essentials
+= Dell OpenManage Enterprise
 
-OpenNMS configuration files for Dell OpenManage Essentials
+OpenNMS configuration files for Dell OpenManage Enterprise
 
 == Installation
 
