@@ -189,6 +189,7 @@
 	</logmsg>
       <severity>Warning</severity>
    </event>
+   <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
    <event>
       <mask>
          <maskelement>
@@ -323,6 +324,7 @@
 	omEntRawAlertInfo=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Major</severity>
+   <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
    </event>
    <event>
       <mask>
@@ -443,5 +445,6 @@
 	omEntAlertMessageId=%parm[#3]%&lt;/p>
 	</logmsg>
       <severity>Major</severity>
+   <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>   
    </event>
 </events>
